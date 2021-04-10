@@ -1,0 +1,24 @@
+name: VuluraEco
+main: fr.loyto.testspigot.Main
+author: Loyto
+version: 1.0
+api-version: 1.16
+commands:
+  argent:
+    permission: vuluraeco.argent
+    description: Affiche ton argent
+  paye:
+    permission: vuluraeco.paye
+    description: Permet d'envoyer de l'argent
+  atm:
+    permission: vuluraeco.atm
+    description: Permet de gagner de l'argent toute les minutes
+  atm-ban:
+    permission: vuluraeco.atm.ban
+    description: Permet de ban un joueur du /atm
+  atm-deban:
+    permission: vuluraeco.atm.deban
+    description: Permet de deban un joueur du /atm
+  example:
+    permission: testspigot.example
+    description: Simple test

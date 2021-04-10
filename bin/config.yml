@@ -1,0 +1,7 @@
+#Fichier de configuration du plugin VuluraEco
+
+plugin:
+  argent:
+    argent-de-depart: 100
+  atm:
+    argent-par-minute: 2
