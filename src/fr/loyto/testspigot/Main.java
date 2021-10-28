@@ -21,23 +21,17 @@ public class Main extends JavaPlugin {
 		configFile = new File("plugins/VuluraEco/config.yml");
 	    config = YamlConfiguration.loadConfiguration(configFile);
 	    
-	    CommandExecutor exampleExecutor = new ExampleCommandExecutor();
-	    getCommand("example").setExecutor(exampleExecutor);
+	    getCommand("example").setExecutor(new ExampleCommandExecutor());
 	    
-	    CommandExecutor moneyExecutor = new MoneyCommandExecutor();
-	    getCommand("argent").setExecutor(moneyExecutor);
+	    getCommand("argent").setExecutor(new MoneyCommandExecutor());
 	    
-	    CommandExecutor payeExecutor = new PayeCommandExecutor();
-	    getCommand("paye").setExecutor(payeExecutor);
+	    getCommand("paye").setExecutor(new PayeCommandExecutor());
 	    
-	    CommandExecutor atmExecutor = new AtmCommandExecutor();
-	    getCommand("atm").setExecutor(atmExecutor);
+	    getCommand("atm").setExecutor(new AtmCommandExecutor());
 	    
-	    CommandExecutor atmBanExecutor = new AtmBanCommandExecutor();
-	    getCommand("atm-ban").setExecutor(atmBanExecutor);
+	    getCommand("atm-ban").setExecutor(new AtmBanCommandExecutor());
 	    
-	    CommandExecutor atmDeBanExecutor = new AtmDeBanCommandExecutor();
-	    getCommand("atm-deban").setExecutor(atmDeBanExecutor);
+	    getCommand("atm-deban").setExecutor(new AtmDeBanCommandExecutor());
 	    
 	    Listener l =new PluginListener();
 	    PluginManager pm = getServer().getPluginManager();
